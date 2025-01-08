@@ -52,5 +52,10 @@ gradlePlugin {
             implementationClass = "PublishKotlinLibraryConventionPlugin"
         }
 
+        register("androidDefaultConfig") {
+            id = "vodafone.task.android.default-config"
+            implementationClass = "AndroidDefaultConfigConventionPlugin"
+        }
+
     }
 }

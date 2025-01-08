@@ -5,6 +5,9 @@ import com.vodafone.task.core.model.city.CitySearchingRequest
 import com.vodafone.task.core.network.VodafoneTaskResource
 import kotlinx.coroutines.flow.Flow
 
+typealias Resource = VodafoneTaskResource<List<City>>
+
 interface SearchingCitiesRepo {
-    fun fetchCities(request: CitySearchingRequest): Flow<List<City>>
+   fun loadLastSearchedCity(): Flow<List<City>>
+   suspend fun fetchCities(request: CitySearchingRequest): Resource
 }

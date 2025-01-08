@@ -23,7 +23,7 @@ internal fun ktorClient(engine: HttpClientEngine): HttpClient =
 
         defaultRequest {
             contentType(ContentType.Application.Json)
-            url(BuildConfig.BASE_URL)
+            url(BuildConfig.WEATHER_BASE_URL)
         }
 
 

@@ -4,6 +4,7 @@ import com.vodafone.task.core.database.model.CityEntity
 import com.vodafone.task.core.model.city.City
 import com.vodafone.task.core.network.model.CityResponse
 
+//For Mapping From Remote to UI
 internal fun List<CityResponse>.asCity() = map(CityResponse::asCity)
 
 internal fun CityResponse.asCity() =
@@ -13,16 +14,10 @@ internal fun CityResponse.asCity() =
         cityLong = longitude ?: 0.0
     )
 
-internal fun City.asCityEntity() =
+//For Mapping From Remote to Local
+internal fun CityResponse.asCityEntity() =
     CityEntity(
-        cityName = cityName,
-        cityLat = cityLat,
-        cityLong = cityLong
-    )
-
-internal fun CityEntity.asCity() =
-    City(
-        cityName = cityName,
-        cityLat = cityLat,
-        cityLong = cityLong
+        cityName = name ?: "",
+        cityLat = latitude ?: 0.0,
+        cityLong = longitude ?: 0.0
     )

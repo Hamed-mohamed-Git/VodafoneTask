@@ -9,13 +9,11 @@ import com.vodafone.task.core.network.datasource.VodafoneTaskWeatherNetworkDataS
 import com.vodafone.task.core.network.model.WeatherResponse
 import javax.inject.Inject
 
-private typealias Resource = VodafoneTaskResource<Weather>
-
 internal class WeatherRepoImpl @Inject constructor(
     private val dataSource: VodafoneTaskWeatherNetworkDataSource
 ) : WeatherRepo {
 
-    override suspend fun loadWeather(request: WeatherRequest): Resource = dataSource
+    override suspend fun loadWeather(request: WeatherRequest): WeatherResource = dataSource
         .fetchWeather(request)
         .map(WeatherResponse::asWeather)
 

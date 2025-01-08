@@ -4,6 +4,8 @@ import com.vodafone.task.core.model.weather.Weather
 import com.vodafone.task.core.model.weather.WeatherRequest
 import com.vodafone.task.core.network.VodafoneTaskResource
 
+typealias WeatherResource = VodafoneTaskResource<Weather>
+
 interface WeatherRepo {
-    suspend fun loadWeather(request: WeatherRequest) : VodafoneTaskResource<Weather>
+    suspend fun loadWeather(request: WeatherRequest) : WeatherResource
 }

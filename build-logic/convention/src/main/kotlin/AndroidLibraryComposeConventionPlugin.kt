@@ -1,6 +1,7 @@
 
 import com.android.build.gradle.LibraryExtension
 import com.build_logic.convention.configureAndroidCompose
+import com.build_logic.convention.utils.debugImplementation
 import com.build_logic.convention.utils.implementation
 import com.build_logic.convention.utils.library
 import org.gradle.api.Plugin
@@ -21,6 +22,15 @@ class AndroidLibraryComposeConventionPlugin : Plugin<Project> {
 
         dependencies{
             implementation(platform(library("androidx.compose.bom")))
+            implementation(library("androidx-material3"))
+            implementation(library("androidx-ui-tooling-preview"))
+            implementation(library("androidx-ui"))
+            implementation(library("androidx-activity-compose"))
+            implementation(library("androidx-ui-graphics"))
+            implementation(library("androidx-lifecycle-runtime-ktx"))
+            implementation(library("androidx-core-ktx"))
+            debugImplementation(library("androidx-ui-tooling"))
+            debugImplementation(library("androidx-ui-test-manifest"))
         }
     }
 }

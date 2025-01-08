@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Patente</string>
+    <!--content_description-->
+    <string name="core_ui_content_description_show_password">Mostra password</string>
+    <string name="core_ui_content_description_hide_password">Nascondi password</string>
+    <string name="core_ui_content_description_open_menu">Apri menu</string>
+    <string name="core_ui_content_description_close_menu">Chiudi menu</string>
+    <string name="core_ui_content_description_back">Indietro</string>
+    <string name="core_ui_content_description_search">Cerca</string>
+    <string name="core_ui_content_description_locked">Bloccato</string>
+    <string name="core_ui_content_description_turn_on_text_to_speech">Attiva sintesi vocale</string>
+    <string name="core_ui_content_description_turn_off_text_to_speech">Disattiva sintesi vocale</string>
+    <string name="core_ui_content_description_play">Riproduci</string>
+    <string name="core_ui_content_description_pause">Pausa</string>
+    <string name="core_ui_content_description_enter_fullscreen">Schermo intero</string>
+    <string name="core_ui_content_description_exit_fullscreen">Esci da schermo intero</string>
+    <string name="core_ui_content_description_balance">Saldo</string>
+    <string name="core_ui_content_description_profile_picture">Immagine del profilo</string>
+    <string name="core_ui_content_description_pick_picture">Seleziona immagine</string>
+    <string name="core_ui_content_description_fast_forward">Avanzamento rapido</string>
+    <string name="core_ui_content_description_fast_rewind">Riavvolgimento rapido</string>
+    <string name="core_ui_content_description_translate">Traduci</string>
+
+    <!--message-->
+    <string name="core_ui_message_set_new_password">Crea una nuova password. Assicurati che sia diversa dalle precedenti per sicurezza.</string>
+    <string name="core_ui_message_sign_in">Ciao! Bentornato, ci sei mancato</string>
+    <string name="core_ui_message_rest_password">Inserisci il tuo numero di telefono e ti invieremo un codice di verifica per reimpostare la password.</string>
+    <string name="core_ui_message_verify_phone_number">Inserisci il codice OTP a 6 cifre che abbiamo inviato al tuo numero di telefono</string>
+    <string name="core_ui_message_otp_verification">Abbiamo inviato un codice di verifica a 6 cifre al tuo numero di telefono</string>
+    <string name="core_ui_message_change_password_success">Hai cambiato la password con successo</string>
+    <string name="core_ui_message_sign_up">Compila le informazioni qui sotto o registrati con il tuo account social.</string>
+    <string name="core_ui_message_home">Impariamo cose nuove oggi!</string>
+    <string name="core_ui_message_pass_exam">Congratulazioni per aver superato l\'esame e aver ottenuto</string>
+    <string name="core_ui_message_fail_exam">Studia di più e la prossima volta otterrai di più</string>
+    <string name="core_ui_message_referral_code">Condividi questo codice con i tuoi amici e guadagna per ogni registrazione al nostro programma di referral.</string>
+    <string name="core_ui_message_unlock_all_content">Impara tutto ciò di cui hai bisogno con accesso completo a tutti i video e capitoli</string>
+    <string name="core_ui_message_leave_exam">Sei sicuro di voler lasciare questo esame?</string>
+    <string name="core_ui_error_message_text_to_speech">Assicurati che la lingua richiesta sia installata nelle impostazioni di sintesi vocale per un corretto funzionamento.</string>
+    <string name="core_ui_error_message_failed_to_load_new_data">Impossibile caricare nuovi dati</string>
+
+    <!--valid-message-->
+    <string name="core_ui_valid_message_passwords_match">Le password corrispondono</string>
+
+    <!--error-message-->
+    <string name="core_ui_error_message_passwords_dont_match">Le password non corrispondono</string>
+    <string name="core_ui_error_message_unexpected_error">Si è verificato un errore imprevisto. Riprova più tardi o contatta il supporto se il problema persiste.</string>
+
+    <!--actions-->
+    <string name="core_ui_action_retry">Retry</string>
+
+    <string name="core_ui_action_next">Avanti</string>
+    <string name="core_ui_action_skip">Salta</string>
+    <string name="core_ui_action_sign_up">Registrati</string>
+    <string name="core_ui_action_sign_in">Accedi</string>
+    <string name="core_ui_action_update_password">Aggiorna password</string>
+    <string name="core_ui_action_forgot_password">Password dimenticata?</string>
+    <string name="core_ui_action_send_code">Invia codice</string>
+    <string name="core_ui_action_resend_otp">Reinvia OTP</string>
+    <string name="core_ui_action_verify">Verifica</string>
+    <string name="core_ui_action_back_to_home">Torna alla home</string>
+    <string name="core_ui_action_start_learning">Inizia a imparare</string>
+    <string name="core_ui_action_take_a_quiz">Fai un quiz</string>
+    <string name="core_ui_action_view_on_arabic">Visualizza in Arabo</string>
+    <string name="core_ui_action_view_on_english">Visualizza in Inglese</string>
+    <string name="core_ui_action_next_video">Prossimo video</string>
+    <string name="core_ui_action_previous_video">Video precedente</string>
+    <string name="core_ui_action_start_exam">Inizia esame</string>
+    <string name="core_ui_action_view_common_questions">Visualizza domande comuni</string>
+    <string name="core_ui_action_dismiss">Chiudi</string>
+    <string name="core_ui_action_message_logged_in_success">Accesso effettuato con successo!</string>
+    <string name="core_ui_action_message_otp_verified">OTP verificato con successo!</string>
+    <string name="core_ui_action_message_password_changed">Password cambiata con successo!</string>
+    <string name="core_ui_action_message_personal_data_changed">Profilo aggiornato con successo!</string>
+    <string name="core_ui_action_true">Vero</string>
+    <string name="core_ui_action_false">Falso</string>
+    <string name="core_ui_action_previous">Precedente</string>
+    <string name="core_ui_action_next_question">Prossima domanda</string>
+    <string name="core_ui_action_get_result">Ottieni risultato</string>
+    <string name="core_ui_action_clear">Pulisci</string>
+    <string name="core_ui_action_read_topic_again">Rileggi argomento</string>
+    <string name="core_ui_action_settings">Impostazioni</string>
+    <string name="core_ui_action_submit">Invia</string>
+    <string name="core_ui_action_exit">Esci</string>
+    <string name="core_ui_action_stay">Rimani</string>
+    <string name="core_ui_text_true">Vero</string>
+    <string name="core_ui_action_share">Condividi</string>
+    <string name="core_ui_action_personal_data">Dati personali</string>
+    <string name="core_ui_action_referral_code">Codice referral</string>
+    <string name="core_ui_action_terms_and_conditions">Termini e condizioni</string>
+    <string name="core_ui_action_about_us">Chi siamo</string>
+    <string name="core_ui_action_arg1_pay_now">Paga ora (%s)</string>
+    <string name="core_ui_action_pay_now">Paga ora</string>
+    <string name="core_ui_action_save_changes">Salva modifiche</string>
+    <string name="core_ui_action_change_password">Cambia password</string>
+    <string name="core_ui_action_confirm">Conferma</string>
+    <string name="core_ui_action_review_exam">Rivedi esame</string>
+    <string name="core_ui_action_view_topic">Visualizza argomento</string>
+    <string name="core_ui_action_logout">Esci</string>
+
+    <!--action_message-->
+    <string name="core_ui_action_message_otp_sent">OTP inviato con successo!</string>
+
+
+    <!--label-->
+    <string name="core_ui_label_name">Nome</string>
+    <string name="core_ui_label_enter_phone_number">Inserisci il numero di telefono</string>
+    <string name="core_ui_label_referral_code">Inserisci il codice referral</string>
+    <string name="core_ui_label_password">Password</string>
+    <string name="core_ui_label_confirm_password">Conferma password</string>
+    <string name="core_ui_label_select_chapter">Seleziona capitolo</string>
+    <string name="core_ui_label_select_topic">Seleziona argomento</string>
+    <string name="core_ui_label_phone_number">Numero di telefono</string>
+    <string name="core_ui_label_current_password">Password attuale</string>
+    <string name="core_ui_label_new_password">Inserisci una nuova password</string>
+    <string name="core_ui_label_options">Opzioni</string>
+
+    <!--placeholder-->
+    <string name="core_ui_placeholder_name">Inserisci il tuo nome</string>
+    <string name="core_ui_placeholder_phone_number">Inserisci il numero di telefono</string>
+    <string name="core_ui_placeholder_referral_code">Inserisci il codice</string>
+    <string name="core_ui_placeholder_password">Password</string>
+    <string name="core_ui_placeholder_confirm_password">Password</string>
+    <string name="core_ui_placeholder_your_name">Il tuo nome</string>
+    <string name="core_ui_placeholder_select_an_item">Seleziona un elemento</string>
+    <string name="core_ui_placeholder_current_password">Password attuale</string>
+    <string name="core_ui_placeholder_new_password">Nuova password</string>
+    <string name="core_ui_placeholder_chapter">Capitolo</string>
+
+    <!--headline-->
+    <string name="core_ui_headline_set_new_password">Imposta nuova password</string>
+    <string name="core_ui_headline_sign_up">Registrati</string>
+    <string name="core_ui_headline_sign_in">Accedi</string>
+    <string name="core_ui_headline_rest_password">Reimposta password</string>
+    <string name="core_ui_headline_otp_verification">Inserisci il codice di verifica</string>
+    <string name="core_ui_headline_verify_phone_number">Verifica numero di telefono</string>
+    <string name="core_ui_headline_home">Ciao, %s!</string>
+    <string name="core_ui_headline_terms_and_conditions">Termini di accordo</string>
+    <string name="core_ui_headline_pass_exam">Sei fantastico!</string>
+    <string name="core_ui_headline_fail_exam">Non arrenderti</string>
+
+    <!--bottom_bar-->
+    <string name="core_ui_bottom_bar_home">Home</string>
+    <string name="core_ui_bottom_bar_chapters">Capitoli</string>
+    <string name="core_ui_bottom_bar_videos">Video</string>
+    <string name="core_ui_bottom_bar_exams">Esami</string>
+    <string name="core_ui_bottom_bar_profile">Profilo</string>
+
+    <!--screen title-->
+    <string name="core_ui_screen_title_exam">Esame</string>
+    <string name="core_ui_screen_title_chapters">Capitoli</string>
+    <string name="core_ui_screen_title_chapter_details">Dettagli del capitolo</string>
+    <string name="core_ui_screen_title_common_questions">Domande comuni</string>
+    <string name="core_ui_screen_title_videos">Video</string>
+    <string name="core_ui_screen_title_exams">Esami</string>
+    <string name="core_ui_screen_title_terms_and_conditions">Termini e condizioni</string>
+    <string name="core_ui_screen_title_about_us">Chi siamo</string>
+    <string name="core_ui_screen_title_profile">Profilo</string>
+    <string name="core_ui_screen_title_referral_code">Codice referral</string>
+    <string name="core_ui_screen_title_personal_data">Dati personali</string>
+    <string name="core_ui_screen_title_upgrade">Aggiorna</string>
+    <string name="core_ui_screen_title_arg1_chapters_errors">%s errori</string>
+    <string name="core_ui_screen_title_chapters_errors">Errori del capitolo</string>
+    <string name="core_ui_screen_title_topics_errors">Errori dell\'argomento</string>
+    <string name="core_ui_screen_title_change_password">Cambia password</string>
+
+    <!--text-->
+    <string name="core_ui_text_sign_up">Registrati</string>
+    <string name="core_ui_text_sign_in">Accedi</string>
+    <string name="core_ui_text_agree_with">Accetta</string>
+    <string name="core_ui_text_terms_and_conditions">Termini e condizioni</string>
+    <string name="core_ui_text_dont_have_an_account">Non hai un account?</string>
+    <string name="core_ui_text_remembered_your_password">Ricordi la tua password?</string>
+    <string name="core_ui_text_didnt_receive_anything">Non hai ricevuto nulla?</string>
+    <string name="core_ui_text_success">Successo</string>
+    <string name="core_ui_text_already_have_an_account">Hai già un account?</string>
+    <string name="core_ui_text_your_progress">Il tuo progresso</string>
+    <string name="core_ui_text_correct_answers">Risposte corrette</string>
+    <string name="core_ui_text_wrong_answers">Risposte sbagliate</string>
+    <string name="core_ui_text_arg1_increase">%s\%% Aumento</string>
+    <string name="core_ui_text_arg1_decrease">%s\%% Diminuzione</string>
+    <string name="core_ui_text_arg1_error">%s errori</string>
+    <string name="core_ui_text_show_by_chapter">Mostra per capitolo</string>
+    <string name="core_ui_text_show_by_topic">Mostra per argomento</string>
+    <string name="core_ui_text_continue_watching">Continua a guardare</string>
+    <string name="core_ui_text_view_all">Visualizza tutto</string>
+    <string name="core_ui_text_last_exams">Ultimi esami</string>
+    <string name="core_ui_text_view">Visualizza</string>
+    <string name="core_ui_text_welcome_to_patente">Benvenuto a Patente</string>
+    <string name="core_ui_text_no_data">Nessun dato</string>
+    <string name="core_ui_text_arg1_n_videos">%s Video</string>
+    <string name="core_ui_text_arg1_n_topics">%s Argomenti</string>
+    <string name="core_ui_text_chapters">Capitoli</string>
+    <string name="core_ui_text_question">Domanda</string>
+    <string name="core_ui_text_refer_and_earn"><![CDATA[Refer & Earn]]></string>
+    <string name="core_ui_text_patente_referral_code">Codice referral Patente</string>
+    <string name="core_ui_text_profile">Profilo</string>
+    <string name="core_ui_text_settings">Impostazioni</string>
+    <string name="core_ui_text_per_question">Per domanda</string>
+    <string name="core_ui_text_general">Tutto</string>
+    <string name="core_ui_text_passed">Superato</string>
+    <string name="core_ui_text_failed">Fallito</string>
+    <string name="core_ui_text_premium_subscription">Abbonamento Premium</string>
+    <string name="core_ui_text_unlock_all_content">Sblocca tutti i contenuti</string>
+    <string name="core_ui_text_recent_search">Ricerca recente</string>
+    <string name="core_ui_text_arg1_errors_list">Elenco errori (%s)</string>
+    <string name="core_ui_text_arg1_n_errors">%s errori</string>
+    <string name="core_ui_text_error">Errori</string>
+    <string name="core_ui_text_videos">Video</string>
+    <string name="core_ui_text_chapters_topics">Argomenti del capitolo</string>
+    <string name="core_ui_text_arg1_topic_rank">Argomento %s</string>
+    <string name="core_ui_text_exams_history">Storico degli esami</string>
+    <string name="core_ui_text_correct_answer">Risposta corretta</string>
+    <string name="core_ui_text_false">Falso</string>
+    <string name="core_ui_text_questions">Domande</string>
+    <string name="core_ui_text_new_exam">Nuovo esame</string>
+    <string name="core_ui_text_exams">Esami</string>
+    <string name="core_ui_text_oh_snaps">Ops!</string>
+    <string name="core_ui_text_arg1_exam_details_title">%s Esame</string>
+    <string name="core_ui_text_ture_and_false_question">Domande Vero &amp; Falso</string>
+    <string name="core_ui_text_arg1_min">%s Min</string>
+    <string name="core_ui_text_arg1_symbol_short">%s \%%</string>
+    <string name="core_ui_text_before_you_start">Prima di iniziare</string>
+    <string name="core_ui_text_start_now">Inizia ora</string>
+
+    <string name="core_ui_text_for_passing">Per il superamento</string>
+    <string name="core_ui_text_tips_before_you_start1">Devi completare questo esame in una sessione, quindi assicurati che la tua connessione Internet sia stabile.</string>
+    <string name="core_ui_text_tips_before_you_start2">Più risposte corrette dai, maggiore sarà la possibilità di superare l\'esame.</string>
+    <string name="core_ui_text_tips_before_you_start3">Se non superi l\'esame, avrai la possibilità di studiare e ripeterlo in seguito.</string>
+
+    <string name="core_ui_dialog_title_text_to_speech">Lingua non installata</string>
+    <string name="core_ui_dialog_title_leave_exam">Lascia l\'esame</string>
+
+
+
+    <string-array name="country_codes">
+        <item>+39</item>
+        <item>+20</item>
+    </string-array>
+
+</resources>

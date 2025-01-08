@@ -1,29 +1,13 @@
-import java.io.FileInputStream
-import java.util.Properties
-
 plugins{
     alias(libs.plugins.vodafone.android.library)
     alias(libs.plugins.vodafone.android.hilt)
+    alias(libs.plugins.vodafone.android.default.config)
     alias(libs.plugins.kotlinx.serialization)
 }
 
 android {
-
     //Name Spacing
     namespace = "com.vodafone.task.core.network"
-
-    //For Load Properties
-    defaultConfig {
-
-//        loadProperties().run {
-//            //TODO: Any KEY Should save it using Native C++ Bridge "NDK & JNI"
-//            // for High security level to avoid getting them easily
-//            // by reverse engineering
-//            buildConfigField("String","BASE_URL",properties["WEATHER_BASE_URL"] as String)
-//            buildConfigField("String","API_KEY",properties["WEATHER_API_KEY"] as String)
-//        }
-
-    }
 }
 
 dependencies {
@@ -44,6 +28,3 @@ dependencies {
     implementation(libs.ktor.serialization.kotlinx.json)
 
 }
-
-internal fun loadProperties(fileName:String = "credentials.properties") = Properties()
-    .apply { load(FileInputStream(rootProject.file(fileName))) }

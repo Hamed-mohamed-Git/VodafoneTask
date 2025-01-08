@@ -21,7 +21,7 @@ internal class KtorCitySearchingNetworkDataSource @Inject constructor(
             get(VodafoneNetworkPath.City.SEARCHING_CITY){
                 parameter("cityName", request.cityName)
                 parameter("limit", request.limit)
-                parameter("apiKey", BuildConfig.API_KEY)
+                parameter("apiKey", BuildConfig.WEATHER_API_KEY)
             }
         }
 }

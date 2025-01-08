@@ -1,9 +1,14 @@
 plugins {
-    id("java-library")
-    alias(libs.plugins.jetbrains.kotlin.jvm)
+    alias(libs.plugins.vodafone.android.library.compose)
+    alias(libs.plugins.vodafone.android.library)
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+android {
+    namespace = "com.vodafone.task.core.designSystem"
+}
+
+dependencies {
+
+    //Compose Dependencies
+    implementation(libs.androidx.compose.ui.text.google.fonts)
 }

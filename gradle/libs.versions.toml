@@ -3,35 +3,35 @@
 android-compileSdk = "35"
 android-minSdk = "24"
 android-targetSdk = "35"
-
-agp = "8.5.0"
-kotlin = "2.0.10"
+#Gradle
+agp = "8.5.2"
+#Core Android
 coreKtx = "1.15.0"
+lifecycleRuntimeKtx = "2.8.7"
+#Testing
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
-lifecycleRuntimeKtx = "2.8.4"
-activityCompose = "1.9.3"
-composeBom = "2024.04.01"
-compose-plugin = "1.7.0-alpha03"
+#Kotlin
+kotlin = "2.0.10"
 ksp = "2.0.10-1.0.24"
-
+#Compose
+composeBom = "2024.12.01"
+compose-plugin = "1.7.0-alpha03"
+activityCompose = "1.9.3"
 #Hilt versions
 hilt = "2.53.1"
 hiltExt = "1.2.0"
-
 #Ktor
 ktor = "2.3.12"
 jetbrainsKotlinJvm = "1.9.0"
-
 #checker
 chucker = "4.0.0"
-
 #room
 room = "2.6.1"
-
 #SDK version
 utilsSdkVersion = "1.0.0-alpha"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -48,6 +48,7 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-ui-text-google-fonts = { module = "androidx.compose.ui:ui-text-google-fonts" }
 
 #Hilt
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
@@ -99,5 +100,6 @@ vodafone-android-room = { id = "vodafone.task.android.room", version = "unspecif
 vodafone-android-library-compose = { id = "vodafone.task.android.library.compose", version = "unspecified" }
 vodafone-android-feature = { id = "vodafone.task.android.feature", version = "unspecified" }
 vodafone-android-maven-publish = { id = "vodafone.task.android.maven-publish", version = "unspecified" }
+vodafone-android-default-config = { id = "vodafone.task.android.default-config", version = "unspecified" }
 vodafone-android-hilt = { id = "vodafone.task.android.hilt", version = "unspecified" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }

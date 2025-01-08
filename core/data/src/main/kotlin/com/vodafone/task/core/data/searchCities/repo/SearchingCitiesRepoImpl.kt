@@ -1,7 +1,5 @@
 package com.vodafone.task.core.data.searchCities.repo
 
-import com.vodafone.task.core.utils.NetworkMonitor
-import com.vodafone.task.core.common.getOrThrow
 import com.vodafone.task.core.common.map
 import com.vodafone.task.core.common.onSuccess
 import com.vodafone.task.core.data.searchCities.mapper.asCity
@@ -20,30 +18,21 @@ private typealias Request = CitySearchingRequest
 
 internal class SearchingCitiesRepoImpl @Inject constructor(
     private val source: VodafoneTaskCitySearchingNetworkDataSource,
-    private val dao: CityDao,
-    private val networkMonitor: NetworkMonitor
+    private val dao: CityDao
 ) : SearchingCitiesRepo {
 
-    override fun fetchCities(request: Request): Flow<List<City>> = networkMonitor
-        .isOnline
-        .map {
-            if (it) fetchAndCacheCities(request)
-            else loadCity()
-        }
+    override fun loadLastSearchedCity(): Flow<List<City>> = dao
+        .loadAllCities()
+        .map(List<CityEntity>::asCity)
 
-    private suspend fun fetchAndCacheCities(request: Request) = source
+    override suspend fun fetchCities(request: Request): Resource = source
         .fetchCitiesBy(request)
-        .map(List<CityResponse>::asCity)
         .onSuccess { insertCity(it) }
-        .getOrThrow()
+        .map(List<CityResponse>::asCity)
 
-    private suspend fun insertCity(city: List<City>) = city
-        .map(City::asCityEntity)
+    private suspend fun insertCity(city: List<CityResponse>) = city
+        .map(CityResponse::asCityEntity)
         .toTypedArray()
         .let { dao.insert(*it) }
-
-    private suspend fun loadCity() = dao
-        .loadAllCities()
-        .map(CityEntity::asCity)
 
 }

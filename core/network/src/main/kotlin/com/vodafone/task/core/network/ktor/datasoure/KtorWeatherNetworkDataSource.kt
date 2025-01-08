@@ -23,7 +23,7 @@ internal class KtorWeatherNetworkDataSource @Inject constructor(
                 parameter("lon", request.lon)
                 parameter("lang", request.lang)
                 parameter("units", request.units)
-                parameter("appId", BuildConfig.API_KEY)
+                parameter("appId", BuildConfig.WEATHER_API_KEY)
             }
         }
 
