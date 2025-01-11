@@ -9,6 +9,5 @@ android {
 
 dependencies {
     //Local Modules
-    implementation(projects.core.model)
     implementation(projects.core.data)
 }

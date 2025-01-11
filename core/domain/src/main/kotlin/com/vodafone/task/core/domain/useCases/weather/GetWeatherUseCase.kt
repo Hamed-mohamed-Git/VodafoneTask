@@ -5,7 +5,9 @@ import com.vodafone.task.core.data.weather.repo.WeatherResource
 import com.vodafone.task.core.model.weather.WeatherRequest
 import javax.inject.Inject
 
-typealias GetWeatherUseCaseType = suspend (WeatherRequest) -> WeatherResource
+fun interface GetWeatherUseCaseType {
+    suspend operator fun invoke(request:WeatherRequest): WeatherResource
+}
 
 internal class GetWeatherUseCase @Inject constructor(
     private val repo: WeatherRepo

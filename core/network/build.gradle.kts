@@ -13,8 +13,8 @@ android {
 dependencies {
 
     //Local Module
-    implementation(projects.core.model)
-    implementation(projects.core.common)
+    api(projects.core.model)
+    api(projects.core.common)
 
     //chucker
     debugImplementation(libs.chucker)

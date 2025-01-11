@@ -5,13 +5,15 @@ import com.vodafone.task.core.model.city.City
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-typealias LastSearchedUseCaseType = () -> Flow<List<City>>
+fun interface LastSearchedUseCaseType {
+    operator fun invoke(): Flow<List<City>>
+}
 
 internal class LoadLastSearchedCityUseCase @Inject constructor(
     private val repo: SearchingCitiesRepo
 ): LastSearchedUseCaseType {
 
-    override fun invoke(): Flow<List<City>> = repo
+    override operator fun invoke(): Flow<List<City>> = repo
         .loadLastSearchedCity()
 
 }

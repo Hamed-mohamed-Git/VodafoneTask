@@ -3,7 +3,7 @@ package com.vodafone.task.core.network.ktor.datasoure
 import com.vodafone.task.core.model.weather.WeatherRequest
 import com.vodafone.task.core.network.BuildConfig
 import com.vodafone.task.core.network.VodafoneNetworkPath
-import com.vodafone.task.core.network.VodafoneTaskResource
+import com.vodafone.task.core.model.VodafoneTaskResource
 import com.vodafone.task.core.network.datasource.VodafoneTaskWeatherNetworkDataSource
 import com.vodafone.task.core.network.ktor.apiCall
 import com.vodafone.task.core.network.model.WeatherResponse

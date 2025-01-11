@@ -9,9 +9,9 @@ android{
 
 dependencies{
     //Local Modules
-    implementation(projects.core.model)
+    api(projects.core.model)
+    api(projects.core.common)
+    api(projects.core.utils)
     implementation(projects.core.network)
-    implementation(projects.core.common)
     implementation(projects.core.database)
-    implementation(projects.core.utils)
 }

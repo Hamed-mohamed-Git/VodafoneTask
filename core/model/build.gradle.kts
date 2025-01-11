@@ -1,3 +1,13 @@
 plugins {
-    alias(libs.plugins.jetbrains.kotlin.jvm)
+    alias(libs.plugins.vodafone.android.library)
+}
+
+android {
+    //Name Spacing
+    namespace = "com.vodafone.task.core.model"
+}
+
+dependencies {
+    //Local module
+    implementation(projects.core.common)
 }
